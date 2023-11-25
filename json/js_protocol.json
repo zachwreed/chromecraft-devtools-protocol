@@ -10,28 +10,15 @@
             "dependencies": [
                 "Runtime"
             ],
-            "types": [
-                {
-                    "id": "SetTagRequest",
-                    "description": "Set tag request",
-                    "type": "object",
-                    "properties": [
-                        {
-                            "name": "tag",
-                            "description": "Browser tag",
-                            "type": "string"
-                        }
-                    ]
-                }
-            ],
             "commands": [
                 {
                     "name": "setTag",
                     "description": "Only for use with ChromeCraft. Sets tag for browser context",
                     "parameters": [
                         {
-                            "name": "SetTagRequest",
-                            "$ref": "SetTagRequest"
+                            "name": "tag",
+                            "description": "Browser tag",
+                            "type": "string"
                         }
                     ]
                 }
