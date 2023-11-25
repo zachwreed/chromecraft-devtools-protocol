@@ -747,6 +747,13 @@ export namespace ProtocolMapping {
 
     export interface Commands {
         /**
+         * Only for use with ChromeCraft. Sets tag for browser context
+         */
+        'ChromeCraft.setTag': {
+            paramsType: [Protocol.ChromeCraft.SetTagRequest];
+            returnType: void;
+        };
+        /**
          * Does nothing.
          */
         'Console.clearMessages': {

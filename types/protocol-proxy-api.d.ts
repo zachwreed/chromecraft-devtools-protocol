@@ -10,6 +10,8 @@ import Protocol from './protocol'
 export namespace ProtocolProxyApi {
 
     export interface ProtocolApi {
+        ChromeCraft: ChromeCraftApi;
+
         Console: ConsoleApi;
 
         Debugger: DebuggerApi;
@@ -112,6 +114,14 @@ export namespace ProtocolProxyApi {
 
     }
 
+
+    export interface ChromeCraftApi {
+        /**
+         * Only for use with ChromeCraft. Sets tag for browser context
+         */
+        setTag(params: Protocol.ChromeCraft.SetTagRequest): Promise<void>;
+
+    }
 
     export interface ConsoleApi {
         /**
