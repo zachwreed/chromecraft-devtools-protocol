@@ -1,6 +1,6 @@
 {
   "name": "chromecraft-devtools-protocol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Chrome DevTools Protocol JSON extended for ChromeCraft",
   "author": "The Chromium Authors",
   "license": "BSD-3-Clause",
