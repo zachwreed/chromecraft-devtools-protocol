@@ -11,6 +11,26 @@ export namespace Protocol {
     export type integer = number
 
     /**
+     * Only for use with ChromeCraft
+     */
+    export namespace ChromeCraft {
+
+        /**
+         * Location in the source code.
+         */
+        export interface SetTagRequest {
+            /**
+             * Browser tag
+             */
+            tag: string;
+        }
+
+        export interface SetTagRequest {
+            SetTagRequest: SetTagRequest;
+        }
+    }
+
+    /**
      * This domain is deprecated - use Runtime or Log instead.
      */
     export namespace Console {

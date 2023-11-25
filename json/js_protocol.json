@@ -1,9 +1,42 @@
 {
     "version": {
         "major": "1",
-        "minor": "3"
+        "minor": "0"
     },
     "domains": [
+        {
+            "domain": "ChromeCraft",
+            "description": "Only for use with ChromeCraft",
+            "dependencies": [
+                "Runtime"
+            ],
+            "types": [
+                {
+                    "id": "SetTagRequest",
+                    "description": "Set tag request",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "name": "tag",
+                            "description": "Browser tag",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ],
+            "commands": [
+                {
+                    "name": "setTag",
+                    "description": "Only for use with ChromeCraft. Sets tag for browser context",
+                    "parameters": [
+                        {
+                            "name": "SetTagRequest",
+                            "$ref": "SetTagRequest"
+                        }
+                    ]
+                }
+            ]
+        },
         {
             "domain": "Console",
             "description": "This domain is deprecated - use Runtime or Log instead.",

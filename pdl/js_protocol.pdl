@@ -4,7 +4,20 @@
 
 version
   major 1
-  minor 3
+  minor 0
+
+# Only for use with ChromeCraft
+domain ChromeCraft
+  # Sets tag request
+  type SetTagRequest extends object
+    properties
+      # Browser tag
+      string tag
+
+  # Only for use with ChromeCraft. Sets tag for browser context
+  command setTag
+    parameters
+      SetTagRequest setTagRequest
 
 # This domain is deprecated - use Runtime or Log instead.
 deprecated domain Console
