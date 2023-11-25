@@ -15,18 +15,11 @@ export namespace Protocol {
      */
     export namespace ChromeCraft {
 
-        /**
-         * Location in the source code.
-         */
         export interface SetTagRequest {
             /**
              * Browser tag
              */
             tag: string;
-        }
-
-        export interface SetTagRequest {
-            SetTagRequest: SetTagRequest;
         }
     }
 
